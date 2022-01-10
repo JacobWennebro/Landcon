@@ -1,6 +1,6 @@
 window.addEventListener("load", async () => {
 
-    const md = new MobileDetect();
+    const md = new MobileDetect(window.navigator.userAgent);
 
     const el = {
         counter: document.getElementById("counter") || {},
@@ -43,9 +43,9 @@ window.addEventListener("load", async () => {
     // Dispatch the timer to run once every second.
     setInterval(timer, 1000);
 
-    alert(md.phone());
+    alert(md.mobile());
 
-    if(!md.phone()) for(const li of el.attendants.children) {
+    if(!md.mobile()) for(const li of el.attendants.children) {
 
         li.addEventListener("mousemove", e => {
             const t = e.target;
