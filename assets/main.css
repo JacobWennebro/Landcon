@@ -25,6 +25,10 @@
     margin-top: 4rem;
 }
 
+#counter {
+    color: lightgray;
+}
+
 #location:hover {
     color: var(--hl2);
     text-decoration: underline;
