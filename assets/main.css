@@ -67,9 +67,11 @@ body,html {
 
 #attendants {
     list-style: none;
-    margin-top: 2rem;
     z-index: 11;
     position: relative;
+    line-height: 1.5em;
+    max-width: 35rem;
+    margin: 2rem auto 0 auto;
 }
 
 #attendants li {

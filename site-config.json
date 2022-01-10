@@ -30,6 +30,14 @@
         {
             "name":"Linda",
             "picture":"/assets/attendants/linda.gif"
+        },
+        {
+            "name":"Frozy",
+            "picture":"/assets/attendants/frozy.jpg"
+        },
+        {
+            "name":"Adde",
+            "picture":"/assets/attendants/adde.jpg"
         }
     ]
 }
