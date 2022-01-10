@@ -35,7 +35,7 @@ window.addEventListener("load", async () => {
     const timer = () => {
         const current = moment();
         const diff = moment.duration(date.diff(current));
-        const string = diff.format("D [day], H [hour], m [min and] s [seconds left]");
+        const string = diff.format("D [day], H [hour], m [minutes and] s [seconds left]");
         
         el.counter.innerText = string;
 
