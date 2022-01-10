@@ -26,6 +26,10 @@
         {
             "name":"Vio",
             "picture":"/assets/attendants/vio.jpg"
+        },
+        {
+            "name":"Linda",
+            "picture":"/assets/attendants/linda.gif"
         }
     ]
 }
