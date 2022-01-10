@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+    --bg: #09151F;
+    --txt: #fff;
+    --hl: #C683DA;
+    --hl2: yellow;
+}
+
+*,*:before,*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    pointer-events: none;
+    display: block;
+    width: 40rem;
+    max-width: 80vw;
+    margin: auto;
+}
+
+#location {
+    margin-top: 4rem;
+}
+
+#location:hover {
+    color: var(--hl2);
+    text-decoration: underline;
+}
+
+body,html {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    background-color: var(--bg);
+    color: var(--txt);
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+#attendants {
+    list-style: none;
+    margin-top: 2rem;
+}
+
+#attendants li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#attendants li:not(:last-child)::after {
+    content: '×';
+    margin: 0 0.75rem;
+    font-size: 1em;
+    color: var(--hl);
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0.5rem 0;
+}
+
+a, a:link, a:visited {
+    color: var(--txt);
+    text-decoration: none;
+}

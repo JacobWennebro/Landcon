@@ -1,0 +1,12 @@
+{
+    "country":"se",
+    "location":"Stockholm",
+    "date": "2022-07-04",
+    "attendants": [
+        "Jacob",
+        "Akela",
+        "Vio",
+        "Nicolina",
+        "Tiapha"
+    ]
+}
