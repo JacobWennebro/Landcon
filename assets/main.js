@@ -10,17 +10,11 @@ window.addEventListener("load", async () => {
 
     const config = await (await fetch('/site-config.json')).json();
 
-    // Make attendants alphabetical order
-    const attendants = config.attendants.sort(function(a, b){
-        if(a < b) { return -1; }
-        if(a > b) { return 1; }
-        return 0;
-    })
-
     // Attendants element
-    for(const attendee of attendants) {
+    for(const attendee of config.attendants) {
         const li = document.createElement("li");
-        li.innerText = attendee;
+        li.innerText = attendee.name;
+        if(attendee.picture) li.setAttribute("data-picture", attendee.picture);
         el.attendants.appendChild(li);
     }
 
@@ -38,7 +32,7 @@ window.addEventListener("load", async () => {
         const string = diff.format("D [day], H [hour], m [minutes and] s [seconds left]");
         
         el.counter.innerText = string;
-
+    
         if(el.countdownShowcase.style.visibility !== "visible") {
             el.countdownShowcase.style.visibility = "visible";
         }
@@ -46,5 +40,31 @@ window.addEventListener("load", async () => {
 
     // Dispatch the timer to run once every second.
     setInterval(timer, 1000);
+
+    for(const li of el.attendants.children) {
+
+        li.addEventListener("mousemove", e => {
+            const t = e.target;
+            if(t.getAttribute("data-picture")) {
+                let pic;
+    
+                if(!document.getElementById("attendeePicture")) {
+                    pic = document.createElement("img");
+                    pic.src = t.getAttribute("data-picture");
+                    pic.id = "attendeePicture";
+                    document.body.appendChild(pic);
+                } else pic = document.getElementById("attendeePicture");
+    
+                pic.style.top = e.clientY+"px";
+                pic.style.left = e.clientX+"px";
+    
+            }
+        });
+
+        li.addEventListener("mouseleave", e => {
+            const pic = document.getElementById("attendeePicture");
+            if(pic) pic.remove(); 
+        });
+    }
 
 });

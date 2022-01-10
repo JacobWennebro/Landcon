@@ -3,11 +3,29 @@
     "location":"Stockholm",
     "date": "2022-07-04",
     "attendants": [
-        "Jacob",
-        "Akela",
-        "Vio",
-        "Nico",
-        "Tiapha",
-        "Mr_Wagger"
+        {
+            "name":"Akela",
+            "picture":"/assets/attendants/akela.jpg"
+        },
+        {
+            "name":"Jacob",
+            "picture":"/assets/attendants/jacob.jpg"
+        },
+        {
+            "name":"Tina",
+            "picture":"/assets/attendants/tina.png"
+        },
+        {
+            "name":"Nico",
+            "picture":"/assets/attendants/nico.jpg"
+        },
+        {
+            "name":"Mr_Wagger",
+            "picture":"/assets/attendants/wagger.jpg"
+        },
+        {
+            "name":"Vio",
+            "picture":"/assets/attendants/vio.jpg"
+        }
     ]
 }

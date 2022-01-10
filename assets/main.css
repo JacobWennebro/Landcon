@@ -29,6 +29,16 @@
     color: lightgray;
 }
 
+#attendeePicture {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15rem;
+    pointer-events: none;
+    box-shadow: 10px 10px 0px 0px var(--hl);
+    z-index: 10;
+}
+
 #location:hover {
     color: var(--hl2);
     text-decoration: underline;
@@ -58,6 +68,8 @@ body,html {
 #attendants {
     list-style: none;
     margin-top: 2rem;
+    z-index: 11;
+    position: relative;
 }
 
 #attendants li {
@@ -66,11 +78,16 @@ body,html {
     font-weight: 600;
 }
 
+#attendants li[data-picture]:hover {
+    font-style: italic;
+}
+
 #attendants li:not(:last-child)::after {
     content: '×';
     margin: 0 0.75rem;
     font-size: 1em;
     color: var(--hl);
+    font-style: normal !important;
 }
 
 h1, h2, h3, h4, h5 {
