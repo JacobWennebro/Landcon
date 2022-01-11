@@ -40,6 +40,9 @@ window.addEventListener("load", async () => {
         }
     }
 
+    // Run once before timer executes
+    timer();
+
     // Dispatch the timer to run once every second.
     setInterval(timer, 1000);
 
