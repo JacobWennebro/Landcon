@@ -14,9 +14,8 @@ window.addEventListener("load", async () => {
             const res = decrypted.toString(CryptoJS.enc.Utf8);
             
             if(res) {
-                window.location.href = "/";
                 const blob = await (await fetch(res)).blob();
-                window.open(URL.createObjectURL(blob));
+                window.location.replace(URL.createObjectURL(blob));
             }
 
         } catch(e) { window.location.reload() }
