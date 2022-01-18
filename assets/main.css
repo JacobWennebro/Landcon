@@ -100,3 +100,8 @@ a, a:link, a:visited {
     color: var(--txt);
     text-decoration: none;
 }
+
+iframe {
+    width: 100vw;
+    height: 100vh;
+}
