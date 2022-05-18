@@ -15,7 +15,7 @@ window.addEventListener("load", async () => {
     // Attendants element
     for(const attendee of config.attendants) {
         const li = document.createElement("li");
-        li.innerText = attendee.name;
+        li.innerHTML = `<img class="flag" src="https://countryflagsapi.com/svg/${attendee.nationality}"/> <span>${attendee.name}</span>`;
         if(attendee.picture) li.setAttribute("data-picture", attendee.picture);
         el.attendants.appendChild(li);
     }

@@ -5,39 +5,38 @@
     "attendants": [
         {
             "name":"Akela",
-            "picture":"/assets/attendants/akela.jpg"
+            "picture":"/assets/attendants/akela.jpg",
+            "nationality":"nl"
         },
         {
             "name":"Jacob",
-            "picture":"/assets/attendants/jacob.jpg"
+            "picture":"/assets/attendants/jacob.jpg",
+            "nationality":"se"
         },
         {
             "name":"Tina",
-            "picture":"/assets/attendants/tina.png"
+            "picture":"/assets/attendants/tina.png",
+            "nationality":"no"
         },
         {
             "name":"Nico",
-            "picture":"/assets/attendants/nico.jpg"
-        },
-        {
-            "name":"Mr_Wagger",
-            "picture":"/assets/attendants/wagger.jpg"
+            "picture":"/assets/attendants/nico.jpg",
+            "nationality":"fi"
         },
         {
             "name":"Vio",
-            "picture":"/assets/attendants/vio.jpg"
+            "picture":"/assets/attendants/vio.jpg",
+            "nationality":"gb"
         },
         {
             "name":"Linda",
-            "picture":"/assets/attendants/linda.gif"
-        },
-        {
-            "name":"Frozy",
-            "picture":"/assets/attendants/frozy.jpg"
+            "picture":"/assets/attendants/linda.gif",
+            "nationality":"se"
         },
         {
             "name":"Adde",
-            "picture":"/assets/attendants/adde.jpg"
+            "picture":"/assets/attendants/adde.jpg",
+            "nationality":"se"
         }
     ]
 }

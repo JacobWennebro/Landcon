@@ -23,10 +23,19 @@
 
 #location {
     margin-top: 4rem;
+    display: inline-block;
 }
 
 #counter {
     color: lightgray;
+}
+
+.flag {
+    height: 0.75em;
+    width: auto;
+    margin-right: 0.5rem;
+    border-radius: 2px;
+    pointer-events: none;
 }
 
 #attendeePicture {
@@ -80,8 +89,12 @@ body,html {
     font-weight: 600;
 }
 
-#attendants li[data-picture]:hover {
-    font-style: italic;
+#attendants li span {
+    pointer-events: none;
+}
+
+#attendants li[data-picture]:hover span {
+    text-decoration: underline;
 }
 
 #attendants li:not(:last-child)::after {
